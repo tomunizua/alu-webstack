@@ -10,14 +10,14 @@ domain_information () {
 }
 
 # Check the number of arguments passed to the script
-if [ "$#" === 1 ]
+if [ "$#" == 1 ]
 then 
 	#if one argument
 	domain_information "$1" "www"
 	domain_information "$1" "lb-01"
 	domain_information "$1" "web-01"
 	domain_information "$1" "web-02"
-elif [ "$#" === 2 ]
+elif [ "$#" == 2 ]
 then 
 	#if two arguments
 	domain_information "$1" "$2"
